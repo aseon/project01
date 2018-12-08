@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+/* Rest CSS */
+body, p, h1, h2, h3, h4, h5, h6, ul, ol, dl, dt, dd, div, a, span, img{
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+}
+ul, ol ,li{
+	list-style-type: none;
+}
+div a ul li {
+	box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+img {
+	vertical-align: top;
+	border: none;
+}
+table {
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.clearfix::before {
+	display: block;
+	content: "";
+}
+.clearfix::after {
+	display: block;
+	content: "";
+	clear: both;
+}

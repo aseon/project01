@@ -1,0 +1,16 @@
+$(document).ready(function(){
+//배너
+	$(".banner_close").click(function(e){
+			e.preventDefault();
+			$("#popup").css({"display" : "none", "top" : -9999});
+	});
+	$(".banner_close").click(function(){
+			$(".bannerevent").css({"display" : "none", "top" : -9999});
+	});
+  $(function(){
+	//ctdmv
+  	var video=document.getElementById("CTDmv");
+  		video.muted=true;
+  		video.play();
+  });
+});

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<title>NesCafe DolceGusto</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="initial-scale=1, width=device-width">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,400,500,700,900" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+	</style>
+
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/gnb.js"></script>
+	<script>
+		$(document).ready(function(){
+//keyvisual
+	 $('.owl-carousel').owlCarousel({
+	    items:5,
+	    loop:true,
+			autoplayTimeout:4000,
+	    center:true,
+	    margin:0,
+	    URLhashListener:true,
+	    autoplayHoverPause:true,
+	responsive: {
+			0: {
+				items: 1
+			},
+			2000: {
+				items: 1
+			}
+		}
+    });
+
+		var index=0;
+		$(".nav_url a").eq(index).addClass("active");
+
+		$(".owl-carousel").on("changed.owl.carousel", function(e){
+			index=e.page.index;
+			$(".nav_url a").removeClass("active");
+			$(".nav_url a").eq(index).addClass("active");
+		});
+	});
+</script>
+
+
+</head>
+
+<body>
+	<div class="wrap">
+		<div id="skip-nav" class="skip_wrap">
+			<a href="#contents">본문으로 바로 가기</a>
+			<a href="#GNB">주 메뉴로 바로 가기</a>
+		</div>
+		<div id="popup">
+			<div class="eventbanner">돌체구스토 커피머신 등록하면 웰컴쿠폰 100% 증정<a href="">자세히 보기</a></div>
+			<a class="banner_close" href="">닫기</a>
+		</div>
+		<!-- 	s  :  header -->
+		<header id="header">
+			<div class="upper_esle">
+				<div class="upper">
+					<div class="login_bar">
+						<ul>
+							<li> <a href=""> 로그인 </a> </li>
+							<li> <a href=""> 회원가입 </a> </li>
+							<li> <a href=""> 마이페이지 </a> </li>
+							<li> <a href=""> 주문 / 배송 조회 </a> </li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="menubar">
+				<div class="logo">
+					<h1 id="logo">
+						<a href=""><img src="images/header/logo1.png" alt="로고"></a></h1>
+				</div>
+				<div class="utill">
+					<div class="login">
+						<ul>
+							<li><a href=""><span>로그인</span></a></li>
+							<li><a href=""><span>장바구니</span></a></li>
+						</ul>
+					</div>
+					<div class="social">
+						<ul>
+							<li><a href=""><span>페이스북</span></a></li>
+							<li><a href=""><span>Instagram</span></a></li>
+							<li><a href=""><span>YouTube</span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<nav id="GNB">
+				<ul>
+					<li>
+						<a href="">완벽한 한잔</a>
+						<div class="sub">
+							<div class="sub_menu">
+								<ul>
+									<li><a href="">네스카페 돌체구스토</a></li>
+									<li><a href="">당신을 위한 노력</a></li>
+									<li><a href="">스마트 캡슐</a></li>
+									<li><a href="">돌체구스토의 모든 것</a></li>
+								</ul>
+								<div class="submenutext">
+									<a href=""><img src="images/header/subnasimg.gif" alt="완벽한 한잔 바로가기"></a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="">Capsule</a>
+						<div class="sub">
+							<div class="sub_menu">
+								<ul class="sub_menu01">
+									<li><a href="">에소프레소</a></li>
+									<li><a href="">아메리카노</a></li>
+									<li><a href="">롱블랙커피</a></li>
+								</ul>
+								<ul class="sub_menu02">
+									<li><a href="">카페메뉴</a></li>
+									<li><a href="">스페셜메뉴</a></li>
+									<li><a href="">앱솔루트 오리진</a></li>
+								</ul>
+								<div class="submenutext">
+									<a href=""><img src="images/header/subcapimg.gif" alt="스마트캡슐 바로가기"></a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="">DolceGusto</a>
+						<div class="sub">
+							<div class="sub_menu">
+								<ul class="sub_menu01">
+									<li><a href="">미니미</a></li>
+									<li><a href="">스마트지니오</a></li>
+									<li><a href="">스텔리아</a></li>
+									<li><a href="">드롭</a></li>
+									<li><a href="">모벤자</a></li>
+								</ul>
+								<ul class="sub_menu02">
+									<li><a href="">이클립스</a></li>
+									<li><a href="">루미오</a></li>
+									<li><a href="">칼라스</a></li>
+									<li><a href="">마제스트</a></li>
+									<li><a href="">인피니시아</a></li>
+								</ul>
+								<div class="submenutext">
+									<a href=""><img src="images/header/subgusimg.gif" alt="돌체구스토 바로가기"></a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href=""> Glass </a>
+					</li>
+					<li>
+						<a href=""> 이벤트 </a>
+					</li>
+					<li>
+						<a href="">고객지원</a>
+						<div class="sub">
+							<div class="sub_menu">
+								<ul>
+									<li><a href="">공지사항</a></li>
+									<li><a href="">QnA</a></li>
+									<li><a href="">매장찾기</a></li>
+									<li><a href="">주문/배송조회</a></li>
+								</ul>
+								<div class="submenutext">
+									<a href=""><img src="images/header/subnasimg.gif" alt="고객지원 바로가기"></a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<div class="menu_utill">
+						<div class="search_area">
+							<form>
+								<input type="text" value="" name="search" placeholder="플랫화이트" class="search">
+							</form>
+						</div>
+					</div>
+				</ul>
+			</nav>
+		</header>
+		<div id="keyvisual" class="clearfix">
+			<div class="owl-carousel owl-theme">
+				<div class="item" data-hash="slide0"><img src="images/header/keyvisual01.png" alt="키비주얼01"></div>
+				<div class="item" data-hash="slide1"><img src="images/header/keyvisual02.png" alt="키비주얼02"></div>
+				<div class="item" data-hash="slide2"><img src="images/header/keyvisual03.png" alt="키비주얼03"></div>
+				<div class="item" data-hash="slide3"><img src="images/header/keyvisual04.png" alt="키비주얼04"></div>
+				<div class="item" data-hash="slide4"><img src="images/header/keyvisual05.png" alt="키비주얼05"></div>
+				<div class="item" data-hash="slide5"><img src="images/header/keyvisual06.png" alt="키비주얼06"></div>
+			</div>
+			<div class="nav_url clearfix">
+				<a class="button secondary url" href="#slide0">커피의 현대미술, 스텔리아</a>
+				<a class="button secondary url" href="#slide1">가을 준비? 리치아로마로 끝!</a>
+				<a class="button secondary url" href="#slide2">시원해도 진하고 깊게 아.아.메!</a>
+				<a class="button secondary url" href="#slide3">마이크로 밀크 폼! 플랫화이트</a>
+				<a class="button secondary url" href="#slide4">올 여름 소.확.행! 썸머카페킷</a>
+				<a class="button secondary url" href="#slide5">커피, 그 이상의 혜택!</a>
+			</div>
+		</div>
+		<section id="contents" class="clearfix">
+			<div class="product clearfix">
+				<div class="capsule_box">
+					<div class="capsule_text">
+						<a href="">
+							<p class="capsule_text_title">Smart Capsule</p>
+							<span>프리미엄 원두와 신선함</span>
+						</a>
+					</div>
+					<div class="capsule_item">
+						<ul class="cap_slide">
+							<li>
+								<a href="">
+									<div class="cap_image">
+										<img src="images/section/capimage01.png" alt="아덴자">
+									</div>
+									<dl>
+										<dt>리스트레토 아덴자</dt>
+										<dd>강렬한 로스팅으로 불꽃같은 맛</dd>
+									</dl>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<div class="cap_image">
+										<img src="images/section/capimage02.png" alt="아이스아메리카노">
+									</div>
+									<dl>
+										<dt>아이스 아메리카노</dt>
+										<dd>시원함은 그대로 깊고 진한 맛은 더!</dd>
+									</dl>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<div class="cap_image">
+										<img src="images/section/capimage03.png" alt="디카페인">
+									</div>
+									<dl>
+										<dt>에스프레소 디카페인</dt>
+										<dd>풍부하고 우아하게 디카페인</dd>
+									</dl>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<div class="cap_image">
+										<img src="images/section/capimage04.png" alt="캬라멜">
+									</div>
+									<dl>
+										<dt>에소프레소 캬라멜</dt>
+										<dd>진하고 달콤하게 즐기고 싶다면</dd>
+									</dl>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="gusto_box">
+					<div class="gusto_text">
+						<a href="">
+							<p class="gusto_text_title">DolceGusto</p>
+							<span> 디자인과 기능 그 모든 것을 담은 커피머신</span>
+						</a>
+					</div>
+					<div class="gusto_item">
+						<ul class="gusto_slide">
+							<li>
+								<a href="">
+									<div class="gusto_image">
+										<img src="images/section/gustoimage01.png" alt="인피니시아">
+									</div>
+									<dl>
+										<dt>인피니시마</dt>
+										<dd>섬세한 터치로 만나는 커피의 즐거움</dd>
+									</dl>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<div class="gusto_image">
+										<img src="images/section/gustoimage02.png" alt="마제스트">
+									</div>
+									<dl>
+										<dt>마제스트</dt>
+										<dd>사무실 환경에 최적화 된 커피 솔루션</dd>
+									</dl>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<div class="gusto_image">
+										<img src="images/section/gustoimage03.png" alt="이클립스">
+									</div>
+									<dl>
+										<dt>이클립스</dt>
+										<dd>프리미엄 커피, 그 이상의 창조.</dd>
+									</dl>
+								</a>
+							</li>
+							<li>
+								<a href="">
+									<div class="gusto_image">
+										<img src="images/section/gustoimage04.png" alt="모벤자">
+									</div>
+									<dl>
+										<dt>모벤자</dt>
+										<dd>원두가 깨어나는 순간의 재해석.
+											<br>맵시있는 커프, 완벽한 모벤자.</dd>
+									</dl>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="usepicnes clearfix">
+				<h3>Nestagram</h3>
+				<br><span>#NesCafe_IN_REAL_LIFE!</span>
+				<div class="picnesimg">
+					<ul>
+						<li>
+							<a href="" class="Nasteimg">
+								<div class="topnes">#커피스타그램 #네스타그램</div>
+								<img src="images/section/usepic01.png" alt="#네스타그램">
+							</a>
+						</li>
+						<li>
+							<a href="" class="Nasteimg">
+								<div class="topnes">#나갈때_간단하게</div>
+								<img src="images/section/usepic02.png" alt="#네스타그램">
+							</a>
+						</li>
+						<li>
+							<a href="" class="Nasteimg">
+								<div class="topnes">#질렀닿 #나도_홈카페ㅎ</div>
+								<img src="images/section/usepic03.png" alt="#네스타그램">
+							</a>
+						</li>
+						<li>
+							<a href="" class="Nasteimg">
+								<div class="allnes">#스마트하게 #아이스_아메리카노</div>
+								<img src="images/section/usepic04.png" alt="#네스타그램">
+							</a>
+						</li>
+						<li>
+							<a href="" class="Nasteimg">
+								<div class="allnes">#캡슐투도어 #신청했당ㅎ</div>
+								<img src="images/section/usepic05.png" alt="#네스타그램">
+							</a>
+						</li>
+						<li>
+							<a href="" class="Nasteimg">
+								<div class="allnes">#네스카페 #스마트캡슐</div>
+								<img src="images/section/usepic06.png" alt="#네스타그램">
+							</a>
+						</li>
+						<li>
+							<a href="" class="Nasteimg">
+								<div class="bottomnes">#홈카페 #brunch</div>
+								<img src="images/section/usepic07.png" alt="#네스타그램">
+							</a>
+						</li>
+						<li>
+							<a href="" class="Nasteimg">
+								<div class="bottomnes">#리치아로마 #득템</div>
+								<img src="images/section/usepic08.png" alt="#네스타그램">
+							</a>
+						</li>
+						<!-- <li>
+								<a href="" class="Nasteimg">
+									<div class="bottomnes">#스마트캡슐 #캡슐투도어신청</div>
+									<img src="images/section/usepic09.png" alt="#네스타그램">
+								</a>
+							</li> -->
+					</ul>
+				</div>
+			</div>
+			<div class="CTD">
+				<div class="ctd_inner clearfix">
+					<h3>Capsule-to-Door</h3>
+					<br><span>당신이 원하는 때, 원하는 곳에서</span>
+					<div class="player">
+						<video id="CTDmv" controls poster="" src="video/CTDmv.mp4"></video>
+					</div>
+					<div class="ctd_benefit">
+						<div class="benefit_image clearfix">
+							<ul>
+								<li><span class="newjoin">캡슐 투 도어 멤버십 혜택</span>
+									<a class="" href=""> 자세히 보기 </a>
+								</li>
+								<li>
+									<a class="" href=""><img src="images/section/benefitimage01.png" alt="캡슐">
+										<dl>
+											<dt>365일 모든 캡슐 할인</dt>
+											<dd>캡슐투도어 서비스 시작과 동시에</dd>
+											<dd>30가지 이상의 다양한 캡슐 10% 할인</dd>
+										</dl>
+									</a>
+								</li>
+								<li>
+									<a class="" href=""><img src="images/section/benefitimage02.png" alt="캡슐">
+										<dl>
+											<dt>돌체구스토 증정</dt>
+											<dd>다양한 네스카페 돌체구스토 캡슐커피</dd>
+											<dd>머신을 100% 무료 증정</dd>
+										</dl>
+									</a>
+								</li>
+								<li>
+									<a class="" href=""><img src="images/section/benefitimage03.png" alt="캡슐">
+										<dl>
+											<dt>매달 무료 배송</dt>
+											<dd>단 한번의 신청으로 매달 원하는 때,</dd>
+											<dd>매달 원하는 곳으로 어디로든 무료배송</dd>
+										</dl>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer id="footer" class="clearfix">
+			<div class="footer_inner cleatfix">
+				<div class="footer_bar">
+					<ul>
+						<li><a href="">자주 묻는 질문과 답변</a></li>
+						<li><a href="">매장 찾기</a></li>
+						<li><a href="">개인정보 취급방침</a></li>
+						<li><a href="">이용약관</a></li>
+					</ul>
+				</div>
+				<p class="address">
+					<span>네슬레코리아 유한책임회사</span>
+					<span>서울특별시 서초구 충정로 70 네스카페 돌체구스토</span>
+					<span>사업자등록번호 : 110-00-00000</span>
+					<span>통신판매업신고 : 0000-서울서대문-000호</span>
+					<span>개인정보책임자 : 홍길동</span>
+					<span>Mail To Master : (ad_min@dolce-gusto.co.kr)</span>
+				</p>
+				<p class="copyright">Copyright © nasCafe Corp.</p>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>
